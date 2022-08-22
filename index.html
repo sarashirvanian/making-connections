@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="application/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div id="title">Profile</div>
+            <div class="header-item" id="home">Home</div>
+            <div class="header-item" id="my-profile">My Profile</div>
+            <div class="header-item" id="connections">Find Connections</div>
+            <button id="sign-out">Sign Out</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-column">
+            <div class="page-box" id="profile-box">
+                <div class="blue-bar"></div>
+                <img class="profile-img" src="icons/user-circle.png" />
+                <div id="profile-name" class="profile-name">Jane Doe</div>
+                <span class="location-line">
+                    <img src="icons/map-marker.png" />
+                    <b>Seattle</b>
+                </span>
+                <div class="description">
+                    Developer | Engineer | Problem Solver
+                    Master of shadows and the Internet!
+                </div>
+                <span class="settings-line">
+                    <img src="icons/gear.png" />
+                    <a href="#" onclick="editName()">edit profile</a>
+                </span>
+            </div>
+            <div class="page-box" id="education-box">
+                <div class="box-header">Education</div>
+                <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                <h4>Dec 2019 - Mar 2020</h4>
+                <p>Triple black belt in Python, MERN, and C#...</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="page-box" id="conn-requests">
+                <span class="box-header"><div class="badge">2</div>Connection Requests</span>
+                <div class="side-profile">
+                    <img class="side-profile-img" src="images/todd-s.jpg" />
+                    <p>Todd E</p>
+                    <img class="conn-button" onclick="removeFriendRequest(this)" src="icons/accept-circle.png" />
+                    <img class="conn-button" onclick="removeFriendRequest(this)" src="icons/close-circle.png" />
+                </div>
+                <div class="side-profile">
+                    <img class="side-profile-img" src="images/phil-s.jpg" />
+                    <p>Phil K</p>
+                    <img class="conn-button" onclick="removeFriendRequest(this)" src="icons/accept-circle.png" />
+                    <img class="conn-button" onclick="removeFriendRequest(this)" src="icons/close-circle.png" />
+                </div>
+            </div>
+            <div class="page-box" id="your-conns">
+                <span class="box-header"><div class="badge">500+</div>Your Connections</span>
+                <div class="side-profile">
+                    <img class="side-profile-img" src="images/adrien-s.jpg" />
+                    <p>Adrien D</p>
+                </div>
+                <div class="side-profile">
+                    <img class="side-profile-img" src="images/anne-s.jpg" />
+                    <p>Anne J</p>
+                </div>
+                <div class="side-profile">
+                    <img class="side-profile-img" src="images/alayne-s.jpg" />
+                    <p>Alayne T</p>
+                </div>
+                <div class="side-profile">
+                    <img class="side-profile-img" src="images/arry-s.jpg" />
+                    <p>Arry Y</p>
+                </div>
+                <div class="yc-footer">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
